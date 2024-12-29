@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+
+	<style>
+		table, tr, th, td
+		{
+			border: 2px solid saddlebrown;
+			border-collapse: collapse;
+		}
+		th,td
+		{
+			padding: 45px;
+		}
+		th
+		{
+			background-color: forestgreen;
+			color: darkkhaki;
+		}
+		tr:nth-child(odd)
+		{
+			background-color: palevioletred;
+		}
+		tr:nth-child(even)
+		{
+			background-color: khaki;
+		}
+		td
+		{
+			text-align: center;
+		}
+		td:hover
+		{
+			background-color: paleturquoise;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>Basic Table</h1>
+
+	<table style="width: 100%">
+		<caption>Table 1: Basic HTML Table</caption>
+		<tr>
+			<th style="width:30%">Name</th>
+			<th style="width:15%">Student ID</th>
+			<th style="width:45%">Picture</th>
+			<th style="width:10%">Phone Num</th>
+		</tr>
+
+		<tr>
+			<td>Nur Syamimie Aqillah</td>
+			<td>2022834342</td>
+			<td><img src="images/img_2.jpg" style="height: 100px;"></td>	
+			<td>0197964858</td>
+		</tr>
+
+		<tr style="height:250px">
+			<td>Nur Syafiza Azreen</td>
+			<td>2022834090</td>
+			<td><img src="animation/bird.gif" style="height: 100px;"></td>	
+			<td>0197964858</td>
+		</tr>
+
+		<tr>
+			<td>Delisha Elvina</td>
+			<td>2022897835</td>
+			<td><img src="images/img_1.jpg" style="height: 100px;"></td>	
+			<td>0197964858</td>
+		</tr>
+	</table>
+
+	<h1>Colspan</h1>
+
+	<table style="width: 100%;">
+
+		<tr>
+			<th>Name</th>
+			<th>Student ID</th>
+			<th colspan="3">Subject</th>
+		</tr>
+
+		<tr>
+			<td>Nur Syamimie Aqillah</td>
+			<td>2022834342</td>
+			<td>IMD316</td>
+			<td>IMD317</td>
+			<td>IMD318</td>
+		</tr>
+		
+	</table>
+
+	<h1>Rowspan</h1>
+
+	<table style="width: 70%;">
+		
+		<tr>
+			<th>Name</th>
+			<td>Syamimie</td>
+		</tr>
+
+		<tr>
+			<th rowspan="2">Email</th>
+			<td>syamimie@gmail.com</td>
+		</tr>
+
+		<tr>
+			<td>aqillah@gmail.com</td>
+		</tr>
+
+		<tr>
+			<th>Alamat</th>
+			<td rowspan="2">Terengganu</td>
+		</tr>
+
+		<tr>
+			<th>Alamat Surat</th>
+		</tr>
+
+
+
+	</table>
+
+</body>
+</html>

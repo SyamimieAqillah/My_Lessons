@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Links</title>
+
+	<style>
+		a:link
+		{
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a:visited
+		{
+			color: royalblue;
+			background-color: midnightblue;
+			text-decoration: none;
+		}
+
+		a:visited
+		{
+			color: darkorange;
+			background-color: lightcoral;
+			text-decoration: underline;
+		}
+
+		a:active
+		{
+			color: darkorchid;
+			background-color: lightcoral;
+			text-decoration: underline;
+		}
+
+		a:hover
+		{
+			color: darkturquoise;
+			background-color: papayawhip;
+			text-decoration: underline;
+		}
+		
+	</style>
+
+</head>
+<body>
+
+	<h2>Internal Links</h2>
+	<a href="html_colors.html"> HTML COLORS </a>
+
+	<h2>External Links</h2>
+	<a href="https://www.umk.edu.my/en/"> Universiti Malaysia Kelantan </a>
+
+	<h2>Target Attribute</h2>
+	<a href="html_images.html" target="_parent"> HTML Images </a>
+
+	<h2>Image as Links</h2>
+	<a href="https://www.umk.edu.my/en/" target="_blank" title="Go to UMK page"> <img src="button/homepage.png"></a>
+
+	<h2>Button as Links</h2>
+	<button onclick="document.location='html_colors.html' ">HTML COLORS</button>
+
+</body>
+</html>
